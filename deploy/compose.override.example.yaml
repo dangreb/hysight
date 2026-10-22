@@ -1,0 +1,14 @@
+# Example only: service name must match the existing compose project.
+services:
+  hindsight:
+    image: hysight:hindsight-1.0.0-v0.1.0
+    environment:
+      HINDSIGHT_API_OPERATION_VALIDATOR_EXTENSION: hysight.extension:PromotionExtension
+      HINDSIGHT_API_OPERATION_VALIDATOR_RULES_FILE: /etc/hysight/promotion-rules.json
+      HINDSIGHT_API_OPERATION_VALIDATOR_STATE_PATH: /var/lib/hysight/state.sqlite3
+      HINDSIGHT_API_OPERATION_VALIDATOR_SCHEMA: public
+      HINDSIGHT_API_HTTP_EXTENSION: hysight.extension:PromotionLifecycle
+    volumes:
+      - ./promotion-rules.json:/etc/hysight/promotion-rules.json:ro
+      - /srv/appdata/hysight:/var/lib/hysight
+

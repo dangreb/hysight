@@ -1,0 +1,62 @@
+{
+  "probe": "hysight-v1-native",
+  "target_bank": "hysight-v1-probe-20261022t093953z-f757a8",
+  "scope": "Real installed refresh handler and hook; inference stubbed; real destination API/storage",
+  "destination_documents_response_keys": [
+    "items",
+    "total",
+    "limit",
+    "offset"
+  ],
+  "destination_stable_id": "hysight/v1/probe",
+  "observed_request_context": {
+    "authenticated_schema": null,
+    "has_api_key_id": true,
+    "has_tenant_id": true,
+    "internal": true,
+    "operation_id": null,
+    "request_context_fields": [
+      "allowed_bank_ids",
+      "api_key",
+      "api_key_id",
+      "authenticated_schema",
+      "cancellation",
+      "extra_headers",
+      "internal",
+      "mcp_authenticated",
+      "retry_count",
+      "tenant_id",
+      "user_initiated"
+    ],
+    "source_schema": "public"
+  },
+  "source_provenance_is_separate": true,
+  "first_memory_units": 2,
+  "model_read_ms": [
+    5.402,
+    4.826,
+    5.138,
+    3.707,
+    5.828,
+    4.068
+  ],
+  "retains": 2,
+  "retractions": 1,
+  "duplicate_refresh_skipped": true,
+  "correction_replaced_stable_document": true,
+  "source_llm_calls_delta": 0,
+  "target_llm_calls": 0,
+  "existing_source_unchanged": true,
+  "temporary_bank_removed": true,
+  "source_image_id": "sha256:1beb58e87ea921fb09533b4a36eeb7bf0a70b6e66cfd8e2a7e49ea0d255af730",
+  "source_image_reference": "agentics/hindsight-api:1.0.0-cu126",
+  "staged_source": "/home/dagr/helpers/hysight-v1-20261022t093953z",
+  "candidate_image_id": "sha256:ae856940b03b0a96bb9d2adde93055ed2a67105c840602b21c8ecf944cfc4921",
+  "candidate_tag": "hysight:0.1.0-candidate",
+  "live_service_configuration_changed": false,
+  "linux_unit_tests": [
+    "Ran 26 tests in 0.142s",
+    "",
+    "OK"
+  ]
+}

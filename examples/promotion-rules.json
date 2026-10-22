@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "rules": [
+    {
+      "id": "executor-lessons-to-team",
+      "source_bank": "executor",
+      "source_model_id": "shared-lessons",
+      "target_bank": "collective",
+      "enabled": true,
+      "target_tags": ["team:hylab", "flow:promoted"],
+      "require_evidence": true
+    }
+  ]
+}
+
